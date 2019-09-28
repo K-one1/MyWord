@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>公司介绍</title>
+    <link rel="stylesheet" href="./assets/styles/ft-carousel.css">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- 当前样式 -->
+    <link rel="stylesheet" href="./assets/styles/team.css">
+    <!-- 公用样式 -->
+    <link rel="stylesheet" href="./assets/styles/common.css">
+    <!-- 动画 -->
+    <link rel="stylesheet" href="./lib/animation.css">
+
+</head>
+<style>
+    .col-md-3 {
+        width: 31%;
+    }
+
+    .carousel-inner {
+        width: 101%;
+    }
+
+    .carousel-indicators .active {
+        background: #EF4D22
+    }
+
+
+
+    .example {
+        /* width: 624px; */
+        height: 490px;
+        font-size: 40px;
+        text-align: center;
+        margin: 20px auto;
+        background-color: #464576;
+    }
+
+    .carousel-item {
+        /* line-height: 336px; */
+        color: #fff;
+        font-family: Arial Black
+    }
+</style>
+
+<body>
+  <!-- 头部 -->
+  <div id="head" class="container">
+        <img src="./assets/imgs/logo.png" alt="" style="  width: 13%;
+                height: 74%;margin-top: 1.5%;">
+        <ul style="margin-left: 35%;">
+          <li>
+            <a href="./index.html">
+              <div class="head_text">
+                <p>首页</p>
+                <p>HOME</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./introduce.html">
+              <div class="head_text">
+                <p>走进德亲</p>
+                <p>ABOUT</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+    
+          </li>
+          <li style="margin-left: 10.5%;">
+            <a href="./product.html">
+              <div class="head_text">
+                <p>德亲产品</p>
+                <p>INDUSTRY</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <li style="margin-left: 10%;">
+            <a href="./information.html">
+              <div class="head_text">
+                <p>信息中心</p>
+                <p>NEWS</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./team.html">
+              <div class="head_text">
+                <p>德亲英雄</p>
+                <p>NERO</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <div class="head_text">
+                <p>加入德亲</p>
+                <p>JOIN</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <!-- <li class="col-md-1">
+                            <div>
+                              <input type="text">
+                            </div>
+                          </li> -->
+        </ul>
+        <div class="head_input">
+          <input type="text" placeholder="请输入关键字">
+          <span class="glyphicon glyphicon-search"></span>
+        </div>
+      </div>
+    <img src="./assets/imgs/banner_team.jpg" alt="" style="width: 100%">
+    <!-- 介绍专栏 -->
+    <div id="team">
+        <div class="team_text container">
+            <p style="margin-top: 15px;color: #DF4C18">————</p>
+            <h4 style="font-size: 24px;color: #DF4C18;font-weight: bold;">团队风采</h4>
+            <p style="font-size:22px;color: #DF4C18">VIDEO COVERAGE</p>
+            <div class="team_text_box">
+                <div class="row team_text_box_one">
+                    <div class="col-md-4" style="padding:0;margin-right: 2%">
+                        <img src="./assets/imgs/team1.jpg" alt="" style="height: 330px;width: 100%;">
+                        <h4>领导关爱老人</h4>
+                        <p>咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他</p>
+                    </div>
+                    <div class="col-md-7">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators" style="left: 52%">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide [900x500]" src="./assets/imgs/team2.jpg"
+                                        data-holder-rendered="true" style="width: 100%"> </div>
+                                <div class="item">
+                                    <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide [900x500]" src="./assets/imgs/team2.jpg"
+                                        data-holder-rendered="true" style="width: 100%"> </div>
+                                <div class="item">
+                                    <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide [900x500]" src="./assets/imgs/team2.jpg"
+                                        data-holder-rendered="true" style="width: 100%"> </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="right: -7px;">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <h4 style="margin-left: 20px;">领导关爱老人</h4>
+                        <p style="margin-left: 20px;">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他</p>
+                    </div>
+                </div>
+                <div class="row team_text_box_two m_t25">
+                    <div class="col-md-8 ">
+                        <div class="col-md-8-son">
+                            <div style="width: 65%" class="m_l20">
+                                <h4 style="font-size:22px;color: #fff">领导关爱老人</h4>
+                                <p style="font-size:14px;margin-top: 10px;;color: #fff">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-bottom:20px;">
+                        <div class="col-md-3-son">
+                            <div style="width: 92%" class="m_l20">
+                                <h4 style="font-size:22px;;color: #fff">领导关爱老人</h4>
+                                <p style="font-size:14px;margin-top: 10px;;color: #fff">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-3-son">
+                            <div style="width: 92%" class="m_l20">
+                                <h4 style="font-size:22px;color: #fff">领导关爱老人</h4>
+                                <p style="font-size:14px;margin-top: 10px;color: rgb(10, 6, 6)">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row team_text_box_thre">
+                    <!-- <div id="carousel-example-generic" class="carousel slide" style="height: 400px;">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active" style="position: relative;">
+                                <img data-src="holder.js/900x500/auto/#777:#555/text:First slide"
+                                    alt="First slide [900x500]" src="./assets/imgs/team6.jpg"
+                                    data-holder-rendered="true" style="    height: 400px;
+                                            width: 100%;">
+                                <div style="background: #E56120;position: absolute;bottom: 0;height: 90px;
+                                        width: 100%;">
+                                    <h4 style="font-size:22px;color: #fff;margin-left: 10px;margin-top: 10px;">领导关爱老人</h4>
+                                    <p style="font-size:14px;margin-top: 10px;color: #fff;margin-left: 10px">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他
+                                </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img data-src="holder.js/900x500/auto/#777:#555/text:First slide"
+                                    alt="First slide [900x500]" src="./assets/imgs/team6.jpg"
+                                    data-holder-rendered="true"> </div>
+                            <div class="item">
+                                <img data-src="holder.js/900x500/auto/#777:#555/text:First slide"
+                                    alt="First slide [900x500]" src="./assets/imgs/team6.jpg"
+                                    data-holder-rendered="true"> </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                        data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                        data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div> -->
+                    <div class="example">
+                        <div class="ft-carousel" id="carousel_3">
+                            <ul class="carousel-inner">
+                                <li class="carousel-item">
+                                    <img src="./assets/imgs/team6.jpg" style="height: 400px;width: 100%;">
+                                    <div style="background: #E56120;position: absolute;bottom: 0;height: 90px;width: 100%;text-align: left;">
+                                        <h4 style="font-size:22px;color: #fff;margin-left: 10px;margin-top: 10px;">领导关爱老人</h4>
+                                        <p style="font-size:14px;margin-top: 10px;color: #fff;margin-left: 10px">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="carousel-item">
+                                    <img src="./assets/imgs/team6.jpg" style="height: 400px;width: 100%;">
+                                    <div style="background: #E56120;position: absolute;bottom: 0;height: 90px;width: 100%;text-align: left;">
+                                        <h4 style="font-size:22px;color: #fff;margin-left: 10px;margin-top: 10px;">领导关爱老人</h4>
+                                        <p style="font-size:14px;margin-top: 10px;color: #fff;margin-left: 10px">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="carousel-item">
+                                    <img src="./assets/imgs/team6.jpg" style="height: 400px;width: 100%;">
+                                    <div style="background: #E56120;position: absolute;bottom: 0;height: 90px;width: 100%;text-align: left;">
+                                        <h4 style="font-size:22px;color: #fff;margin-left: 10px;margin-top: 10px;">领导关爱老人</h4>
+                                        <p style="font-size:14px;margin-top: 10px;color: #fff;margin-left: 10px">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="carousel-item">
+                                    <img src="./assets/imgs/team6.jpg" style="height: 400px;width: 100%;">
+                                    <div style="background: #E56120;position: absolute;bottom: 0;height: 90px;width: 100%;text-align: left;">
+                                        <h4 style="font-size:22px;color: #fff;margin-left: 10px;margin-top: 10px;">领导关爱老人</h4>
+                                        <p style="font-size:14px;margin-top: 10px;color: #fff;margin-left: 10px">咋们都是德亲人，记住德亲去旅行。德亲虽然两个字，用它可以检验人。大家都能认得他
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- <span class="carousel-btn carousel-prev-btn"></span> -->
+                            <!-- <span class="carousel-btn carousel-next-btn"></span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 线 -->
+    <div id="line" class="m_t50">
+
+    </div>
+    <!-- 底部 -->
+    <div id="footer" class="m_b20">
+        <div class="container">
+            <ul class="footer_conrent_title">
+                <li>走进德亲</li>
+                <li>德亲产品</li>
+                <li>信息中心</li>
+                <li>德亲英雄</li>
+                <li>加入德亲</li>
+            </ul>
+            <ul class="footer_conrent">
+                <li>
+                    <p style="margin-top:14px;">公司简介</p>
+                    <p>创始人致辞</p>
+                    <p>企业文化</p>
+                    <p>合作伙伴</p>
+                    <p>创始团队</p>
+                </li>
+                <li>
+                    <p style="margin-top:14px;">德亲生物</p>
+                    <p>德亲生物</p>
+                    <p>德亲生态农业</p>
+                    <p>德亲养生庄园</p>
+                </li>
+                <li>
+                    <p style="margin-top:14px;">媒体报道</p>
+                    <p>视频新闻</p>
+                    <p>企业新闻</p>
+                </li>
+                <li>
+                    <p style="margin-top:14px;">团队风采</p>
+                </li>
+                <li>
+                    <p style="margin-top:14px;">人才招聘</p>
+                    <p>联系我们</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_bottom container">
+        <div class="footer_bottom_one ">
+            <div style="display: flex;">
+                <select name="" id="" style="border-radius: 26px;width: 35%;;height: 27px;color: #BFBFBF;padding-left: 10px;">
+                    <option value="">德亲国旅</option>
+                    <option value="">22</option>
+                    <option value="">333</option>
+                </select>
+                <div style="margin-left: 13.7%;">
+                    <span style="padding-right: 20px;border-right:1px #ccc solid;color: #BFBFBF;">关于我们</span>
+                    <span style="padding-right: 20px;color: #BFBFBF;">联系我们</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 15px;">Copyright©2016-2019成都德亲生物技术有限公司 蜀ICP备0000000000号</div>
+        </div>
+        <div class="footer_bottom_two ">
+                <div style="background:url('./assets/imgs/index_webo.png')no-repeat; background-size: 104%;height: 52%;width: 40%;">
+                </div>
+                <div style="background:url('./assets/imgs/index_wechat.png')no-repeat; background-size: 104%;height: 52%;width: 40%;"></div>
+            <div style="background:url('./assets/imgs/xinfeng.png')no-repeat; background-size: 91%;background-position: 1px 4px;height: 52%;width: 40%;"></div>
+        </div>
+        <div class="footer_bottom_three" style="margin-left:10%">
+            <p>成都市金牛区乡农市街59号A座</p>
+            <p style="margin-top: 16px;">
+                <span>电话：028-83416828</span>
+                <span>网址：www.deqn.com.cn</span>
+            </p>
+        </div>
+    </div>
+    <script src="./lib/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- 轮播二 代码 -->
+    <script>
+        ! function (t) {
+            function i(t, i) {
+                this.init(t, i)
+            }
+            i.prototype = {
+                init: function (i, n) {
+                    this.ele = i, this.opts = t.extend({}, {
+                        index: 0,
+                        auto: !0,
+                        time: 4e3,
+                        indicators: !0,
+                        buttons: !0
+                    }, n), this.index = this.opts.index, this.render(), this.eventBind(), this.opts.auto && this.loop()
+                },
+                render: function () {
+                    this.renCas(), this.opts.indicators && this.renIns(), this.opts.buttons && this.renBtns()
+                },
+                renCas: function () {
+                    var t = this.ele.find(".carousel-inner"),
+                        i = t.find(".carousel-item"),
+                        n = i.length,
+                        e = i.eq(n - 1).clone(),
+                        s = i.eq(0).clone(),
+                        o = this.ele.width();
+                    this.index = this.index < 0 || this.index > n - 1 ? 0 : this.index, t.width((n + 2) * o).prepend(e).append(s).css(
+                        "left", (this.index + 1) * -o), t.find(".carousel-item").width(o)
+                },
+                renIns: function () {
+                    for (var t = this.ele.find(".carousel-item").length - 2, i = '<div class="carousel-indicators">', n = 0; n < t; n++)
+                        i += '<span data-index="' + n + '"></span>';
+                    i += "</div>", this.ele.append(i).find(".carousel-indicators span").eq(this.index).addClass("active")
+                },
+                renBtns: function () {
+                    this.ele.append(
+                        '<span class="carousel-btn carousel-prev-btn"></span><span class="carousel-btn carousel-next-btn"></span>')
+                },
+                animate: function (t) {
+                    var i = this,
+                        n = this.ele.find(".carousel-inner"),
+                        e = this.ele.width(),
+                        s = n.find(".carousel-item").length;
+                    this.opts.indicators;
+                    n.stop(!0, !0).animate({
+                        left: n.position().left + t
+                    }, function () {
+                        var o = n.position().left;
+                        t < 0 && o < -e * (s - 2) && n.css("left", -e), t > 0 && o > -e && n.css("left", -e * (s - 2)), i.index = n.position()
+                            .left / -e - 1, i.opts.buttons && i.showBtn()
+                    })
+                },
+                showBtn: function () {
+                    this.ele.find(".carousel-indicators span").removeClass("active").eq(this.index).addClass("active")
+                },
+                loop: function () {
+                    var t = this.ele.find(".carousel-next-btn");
+                    this.timer = setInterval(function () {
+                        t.trigger("click")
+                    }, this.opts.time)
+                },
+                eventBind: function () {
+                    var i = this,
+                        n = this.ele.find(".carousel-prev-btn"),
+                        e = this.ele.find(".carousel-next-btn"),
+                        s = this.ele.find(".carousel-indicators"),
+                        o = this.ele.width(),
+                        a = (this.ele.find(".carousel-item").length, this.opts.auto);
+                    e.on("click", function () {
+                        i.animate(-o)
+                    }), n.on("click", function () {
+                        i.animate(o)
+                    }), s.on("click", "span", function () {
+                        i.animate((t(this).data("index") - i.index) * -o)
+                    }), a && this.ele.hover(function () {
+                        clearInterval(i.timer)
+                    }, function () {
+                        i.loop()
+                    })
+                }
+            }, t.fn.FtCarousel = function (n) {
+                return this.each(function () {
+                    new i(t(this), n)
+                })
+            }
+        }(jQuery);
+
+
+    </script>
+    <script>
+        $("#carousel_3").FtCarousel({
+            index: 0,
+            auto: true,
+            time: 330000,
+            indicators: false,
+            buttons: true
+        });
+        $("#head ul li").mousemove(function () {
+    // $("#head").find('p').css({"color": "#737373" })
+    $(".home_x").css({ "visibility": "hidden" })
+    // $(this).find('p').css({"color": "#F04D22" })
+    // $(this)
+    // $(this).find("p").css({"color":"#E8744A"})
+    $(this).find("a").addClass("selected").find(".home_x").css({ "visibility": "visible" })
+    console.log(1111);
+  }).mouseout(function () {
+    $(this).find("a").removeClass("selected");
+  })
+    </script>
+
+
+
+
+
+</body>
+
+</html>

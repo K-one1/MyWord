@@ -1,0 +1,310 @@
+#introduce {
+    /* text-align: center */
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+#introduce .introduce_title {
+    /* margin-left: 27%; */
+    padding-left: 10%
+}
+
+#introduce .introduce_title li {
+    color: #F26038;
+}
+
+#introduce .introduce_title li:hover {
+    cursor: pointer;
+}
+
+#introduce .introduce_title .active {
+    /* border-bottom: 2px solid #F04D22;
+    border-width: 10px; */
+}
+
+.english {
+    visibility: hidden
+}
+
+.english P:nth-child(1) {
+    background: #F04D22;
+    height: 2px;
+    width: 26%;
+    margin-left: 36%;
+}
+
+.english P:nth-child(2) {
+    font-size: 12px;
+}
+
+.introduce_content .introduce_content_list:nth-child(1) {
+    display: block;
+}
+
+.introduce_content .introduce_content_list:nth-child(2) {
+    text-align: right;
+}
+
+.hove_p{
+    position: absolute;
+    border-top: #fff 2px solid;
+    transform: rotate(90deg);
+    color: #fff;
+    font-size: 21px;
+    margin-left: -45px;
+    margin-top: 47px;
+    width: 128px;
+    text-align: right;
+}
+
+#introduce .introduce_title .introduce_title_active {
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container_h4 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 4px;
+}
+
+#introduce .introduce_title .b_l_c {
+    border-left: 1px solid #ccc;
+}
+
+#introduce .introduce_title .b_t_c {
+    border-top: 1px solid #ccc;
+}
+
+#introduce .introduce_title .b_r_c {
+    border-right: 1px solid #ccc;
+}
+
+#introduce .introduce_title .b_b_c {
+    border-bottom: 1px solid #ccc;
+}
+
+#introduce .introduce_content {
+    margin-top: 26px;
+}
+
+#introduce .introduce_content_list .introduce_content_text {
+    color: #F04D22;
+}
+
+#introduce .introduce_content .introduce_content_top {
+    display: flex;
+}
+
+#introduce .introduce_content .introduce_content_top .introduce_content_top_one {
+    background: url('../imgs/jix-14.png') no-repeat;
+}
+
+#introduce .introduce_content .introduce_content_top .introduce_content_top_one img {
+    height: 300px;
+    width: 465px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#introduce .introduce_content .introduce_content_top .introduce_content_top_two {
+    text-indent: 5%;
+    width: 47%;
+    margin-left: 6%;
+    line-height: 210%;
+    font-size: 16px;
+}
+
+#introduce .introduce_content .introduce_content_top {
+    display: flex;
+}
+
+#introduce .introduce_content .introduce_content_bottom {
+    display: flex;
+}
+
+#introduce .introduce_content .introduce_content_bottom .introduce_content_bottom_one {
+    background: url('../imgs/fangz.png')no-repeat;
+    height: 190px;
+    width: 160px;
+}
+
+#introduce .introduce_content .introduce_content_bottom .introduce_content_bottom_two {
+    text-indent: 5%;
+}
+
+#introduce .introduce_content .introduce_content_bottom .introduce_content_bottom_two .introduce_content_bottom_two_p {
+    margin-top: 6%;
+    line-height: 210%;
+    font-size: 16px;
+}
+
+.introduce_content_list {
+    display: none;
+}
+.introduce_content_list .introduce_content_list_two_left{
+    width: 50%;border-right: 1px solid #F04D22;
+}
+.introduce_content_list .introduce_content_list_two_left .introduce_content_list_two_left_one_imgbox {
+    width: 100%;
+    height: 296px;
+    background: url(../imgs/kuang-2.png)no-repeat;
+    background-size: 100.5%;
+    background-position: -2px 3px;
+}
+.introduce_content_list_two_right{
+    width: 50%;margin-left: 20px;
+}
+.back_x{
+    background: url('../imgs/xin.png')no-repeat;
+                            width: 42%;
+                            height: 70px;
+                            position: absolute;
+                            top: 0;
+                            right: -200px;
+                            background-size: 100%;
+                            background-position: -65px 0;
+}
+.introduce_content_list_two_right p{
+    text-indent: 20px;line-height: 200%;text-align: left
+}
+.chuangshi{
+    text-indent: 20px;line-height: 200%;margin-right: 4%;text-align: left
+}
+
+.introduce_content_list .introduce_content_list_two_left .introduce_content_list_two_left_one_imgbox img {
+    width: 286px;
+    height: 228px;
+    margin: 14px;
+}
+
+/* 二部分 */
+
+.introduce_content_list_two_left_one_text {
+    margin-left: 10px;
+}
+
+.introduce_content_list_two_left_one_text ul {
+    margin-top: 30px;
+    padding-left: 23px
+}
+
+.introduce_content_list_two_left_one_text li {
+    text-align: left;
+    position: relative;
+    text-indent: 10px;
+    width: 80%;
+    margin-top: 4px;
+}
+
+.introduce_content_list_two_left_one_text li span {
+    width: 7px;
+    height: 7px;
+    background: #6C6D6F;
+    position: absolute;
+    top: 34%;
+    display: block;
+}
+
+.introduce_content_list_two_left_one_text h3 {
+    font-size: 21px;
+    background: #F04D22;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+/* 三部分 */
+
+.introduce_content_list_three ul, li {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    list-style-type: none;
+}
+
+/* box */
+
+#box {
+    width: 304px;
+    height: 280px;
+}
+
+#box li {
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+}
+
+#box li.hove {
+    width: 660px;
+}
+
+#box li span {
+    line-height: 96px;
+    font-size: 28px;
+    font-weight: bold;
+    width: 100px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 0 0 0;
+    background: #F04D22;
+    position: absolute;
+    border-right: 1px solid #740a20;
+    writing-mode: tb-rl;
+    box-shadow: 9px 0px 14px #ccc;
+}
+.introduce_content_bottom_two_p{
+    text-align: left
+}
+
+#box li span.hove {
+    background: #F04D22;
+}
+
+#box ul {
+    width: 385%;
+    height: 200%;
+}
+
+#box li div {
+    margin: 0px 0px 0px 100px;
+    overflow: hidden;
+    width: 560px;
+    height: 100%;
+    background: #F3F3F3;
+}
+
+#box li div .one {
+    color: red;
+    margin-top: 40%;
+}
+
+#box li div .two {
+    text-indent: 35px;
+}
+
+#box li div p {
+    font-size: 18px;
+    padding: 0px 65px;
+}
+
+.map_two_box .col-md-5 {
+    height: 400px;
+}
+
+.map_two_box .map_two_box_text {
+    border: 1px solid #ccc;
+    text-align: left
+}

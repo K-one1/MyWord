@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>公司介绍</title>
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- 当前样式 -->
+    <link rel="stylesheet" href="./assets/styles/introduce.css">
+    <!-- 公用样式 -->
+    <link rel="stylesheet" href="./assets/styles/common.css">
+    <!-- 动画 -->
+    <link rel="stylesheet" href="./lib/animation.css">
+    <link rel="stylesheet" href="./lib/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./assets/styles/focusStyle.css">
+
+</head>
+<style>
+    html {
+        /* position: relative; */
+        height: 100%;
+    }
+
+    #a1111 {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gallery-top {
+        /* height: 80%; */
+        width: 100%;
+    }
+
+    .gallery-thumbs {
+        /* height: 20%; */
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .gallery-thumbs .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    .swiper-slides {
+        width: 9% !important;
+    }
+
+    #introduce .introduce_title .introduce_title_active {
+        height: 75px;
+        line-height: 70px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    #introduce .introduce_title {
+        color: #000
+    }
+
+    #introduce .introduce_title {
+        margin-left: auto;
+    }
+
+    #introduce .introduce_title li {
+        color: #000
+    }
+
+    .introduce_titles {
+        background: #F04D22;
+        height: 2px;
+        width: 50%;
+        visibility: hidden;
+        margin-left: 24%;
+    }
+
+    .map_wenzi {
+        margin: 23px 0 0 0;
+        display: flex;
+        line-height: 280%;
+        font-size: 17px;
+    }
+
+    .map_wenzi1 {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: url('./assets/imgs/phone (2).png')no-repeat;
+        background-position: 2px 3px;
+    }
+
+    .map_wenzi2 {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-left: 15px;
+        background: url('./assets/imgs/position (2).png')no-repeat;
+        background-size: 92%;
+        background-position: 4px 3px;
+    }
+
+    #next-img {
+        top: 85.4% !important;
+        right: 91.9% !important;
+        background: url('./assets/imgs/icon_arrow2.png')no-repeat !important;
+    }
+
+    #prev-img {
+        top: 86.1% !important;
+        right: 85.4% !important
+    }
+    .introduce_title .active{
+        color: #F04D22
+    }
+    .visibility{
+            visibility:visible!important;
+        }
+</style>
+
+<body>
+  <!-- 头部 -->
+  <div id="head" class="container">
+        <img src="./assets/imgs/logo.png" alt="" style="  width: 13%;
+                height: 74%;margin-top: 1.5%;">
+        <ul style="margin-left: 35%;">
+          <li>
+            <a href="./index.html">
+              <div class="head_text">
+                <p>首页</p>
+                <p>HOME</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./introduce.html">
+              <div class="head_text">
+                <p>走进德亲</p>
+                <p>ABOUT</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+    
+          </li>
+          <li style="margin-left: 10.5%;">
+            <a href="./product.html">
+              <div class="head_text">
+                <p>德亲产品</p>
+                <p>INDUSTRY</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <li style="margin-left: 10%;">
+            <a href="./information.html">
+              <div class="head_text">
+                <p>信息中心</p>
+                <p>NEWS</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./team.html">
+              <div class="head_text">
+                <p>德亲英雄</p>
+                <p>NERO</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <div class="head_text">
+                <p>加入德亲</p>
+                <p>JOIN</p>
+                <div class='home_x'></div>
+              </div>
+            </a>
+          </li>
+          <!-- <li class="col-md-1">
+                            <div>
+                              <input type="text">
+                            </div>
+                          </li> -->
+        </ul>
+        <div class="head_input">
+          <input type="text" placeholder="请输入关键字">
+          <span class="glyphicon glyphicon-search"></span>
+        </div>
+      </div>
+    <!-- 介绍专栏 -->
+    <img src="./assets/imgs/banner1.jpg" alt="" style="width: 100%">
+    <div id="introduce" class="container">
+        <ul class="introduce_title row">
+            <li class="col-md-3 b_b_c ">
+                <p class="introduce_title_active active">德亲生物</p>
+                <p class="introduce_titles visibility"></p>
+            </li>
+            <li class="col-md-3 b_b_c b_l_c">
+                <p class="introduce_title_active">德亲国旅</p>
+                <p class="introduce_titles"></p>
+            </li>
+            <li class="col-md-3 b_b_c b_l_c">
+                <p class="introduce_title_active">德亲生态农业</p>
+                <p class="introduce_titles"></p>
+            </li>
+            <li class="col-md-3 b_b_c b_l_c">
+                <p class="introduce_title_active">德亲养生庄园</p>
+                <p class="introduce_titles"></p>
+            </li>
+        </ul>
+        <div class="introduce_content m_t90 container">
+            <div class="introduce_content_list" style="display: block;">
+                <div class="row" style="position: relative;">
+                    <div class="container" style="margin-bottom:40px;position: relative;">
+                        <img src="./assets/imgs/shu.png" alt="" style="position: absolute;left:0;top: 20%;">
+                        <img src="./assets/imgs/heng.png" alt="" style="position: absolute;left: 66px;bottom: -40px;">
+                        <img src="./assets/imgs/Group photo.jpg" alt="" height="320px;" class="col-md-5"
+                            style="margin-right: 10px;width: 465px;height: 300px;">
+                        <div class="introduce_content_text col-md-6" style="margin-top: 20px;">
+                            <p style="font-size: 18px;">AVAJHFBJHBFSHFUHSHKSJD</p>
+                            <h3 style="font-size: 24px;">德亲生态农业</h3>
+                            <p style="    line-height: 210%;
+                            font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-top: 20px;color: #000">
+                                德亲养生德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="container">
+                        <div class="introduce_content_text col-md-6" style="margin-top: 30px;margin-right: 24px;">
+                            <p style="line-height: 210%;
+                            font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-top: 20px;margin-left: 40px;color: #000">
+                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                            </p>
+                            <p style="line-height: 210%;
+                            font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-left: 40px;color: #000">
+                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                            </p>
+                            <div class="arrow" style="flex-direction:row;margin-top: 100px;">
+                                    <p class="arrow_rigin"
+                                        style="background: url('./assets/imgs/icon_arrow2.png')no-repeat;background-position: -2px 4px;">
+                                    </p>
+                                    <p class="arrow_text">01</p>
+                                    <p class="arrow_left"
+                                        style="background: url('./assets/imgs/icon_arrow.png')no-repeat;background-position: -2px 4px;">
+                                    </p>
+                            </div>
+                        </div>
+                        <img src="./assets/imgs/chanpsy.jpg" alt="" height="320px;" class="col-md-5"
+                            style="margin-right: 10px;width:420px;height: 313px;;">
+                    </div> -->
+                    <!-- 轮播 -->
+                    <div id="focus-banner" style="height: 380px;">
+                        <ul id="focus-banner-list">
+                            <li style="display: block;">
+                                <div class="introduce_content_top">
+                                    <div class="container">
+                                        <div class="introduce_content_text col-md-6"
+                                            style="margin-top: 30px;margin-right: 24px;">
+                                            <p
+                                                style="line-height: 210%;
+                                                font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-top: 20px;margin-left: 40px;color: #000">
+                                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                                            </p>
+                                            <p
+                                                style="line-height: 210%;
+                                                font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-left: 40px;color: #000">
+                                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                                            </p>
+                                            <div class="arrow" style="flex-direction:row;margin-top: 100px;">
+                                                <p class="arrow_rigin"
+                                                    style="background: url('./assets/imgs/icon_arrow2.png')no-repeat;background-position: -2px 4px;">
+                                                </p>
+                                                <p class="arrow_text">01</p>
+                                                <p class="arrow_left"
+                                                    style="background: url('./assets/imgs/icon_arrow.png')no-repeat;background-position: -2px 4px;">
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/imgs/chanpsy.jpg" alt="" height="320px;" class="col-md-5"
+                                            style="margin-right: 10px;width:420px;height: 313px;;">
+                                    </div>
+                            </li>
+                            <li style="display: none;">
+                                <div class="introduce_content_top">
+                                    <div class="container">
+                                        <div class="introduce_content_text col-md-6"
+                                            style="margin-top: 30px;margin-right: 24px;">
+                                            <p
+                                                style="line-height: 210%;
+                                                font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-top: 20px;margin-left: 40px;color: #000">
+                                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                                            </p>
+                                            <p
+                                                style="line-height: 210%;
+                                                font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-left: 40px;color: #000">
+                                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                                            </p>
+                                            <div class="arrow" style="flex-direction:row;margin-top: 100px;">
+                                                <p class="arrow_rigin"
+                                                    style="background: url('./assets/imgs/icon_arrow2.png')no-repeat;background-position: -2px 4px;">
+                                                </p>
+                                                <p class="arrow_text">02</p>
+                                                <p class="arrow_left"
+                                                    style="background: url('./assets/imgs/icon_arrow.png')no-repeat;background-position: -2px 4px;">
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/imgs/chanpsy.jpg" alt="" height="320px;" class="col-md-5"
+                                            style="margin-right: 10px;width:420px;height: 313px;;">
+                                    </div>
+                            </li>
+                            <li style="display: none;">
+                                <div class="introduce_content_top">
+                                    <div class="container">
+                                        <div class="introduce_content_text col-md-6"
+                                            style="margin-top: 30px;margin-right: 24px;">
+                                            <p
+                                                style="line-height: 210%;
+                                                font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-top: 20px;margin-left: 40px;color: #000">
+                                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                                            </p>
+                                            <p
+                                                style="line-height: 210%;
+                                                font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-left: 40px;color: #000">
+                                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                                            </p>
+                                            <div class="arrow" style="flex-direction:row;margin-top: 100px;">
+                                                <p class="arrow_rigin"
+                                                    style="background: url('./assets/imgs/icon_arrow2.png')no-repeat;background-position: -2px 4px;">
+                                                </p>
+                                                <p class="arrow_text">03</p>
+                                                <p class="arrow_left"
+                                                    style="background: url('./assets/imgs/icon_arrow.png')no-repeat;background-position: -2px 4px;">
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/imgs/chanpsy.jpg" alt="" height="320px;" class="col-md-5"
+                                            style="margin-right: 10px;width:420px;height: 313px;;">
+                                    </div>
+                            </li>
+                            <li style="display: none;">
+                                <div class="introduce_content_top">
+                                    <div class="container">
+                                        <div class="introduce_content_text col-md-6"
+                                            style="margin-top: 30px;margin-right: 24px;">
+                                            <p
+                                                style="line-height: 210%;
+                                                font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-top: 20px;margin-left: 40px;color: #000">
+                                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                                            </p>
+                                            <p
+                                                style="line-height: 210%;
+                                                font-size: 16px;text-indent: 2%;letter-spacing: 1px;margin-left: 40px;color: #000">
+                                                生庄园德亲养生庄园德亲养生庄园德亲养生庄园庄园德亲养生庄园德亲养生庄园德亲养生庄园德亲养生庄园
+                                            </p>
+                                            <div class="arrow" style="flex-direction:row;margin-top: 100px;">
+                                                <p class="arrow_rigin"
+                                                    style="background: url('./assets/imgs/icon_arrow2.png')no-repeat;background-position: -2px 4px;">
+                                                </p>
+                                                <p class="arrow_text">04</p>
+                                                <p class="arrow_left"
+                                                    style="background: url('./assets/imgs/icon_arrow.png')no-repeat;background-position: -2px 4px;">
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/imgs/chanpsy.jpg" alt="" height="320px;" class="col-md-5"
+                                            style="margin-right: 10px;width:420px;height: 313px;;">
+                                    </div>
+                            </li>
+                        </ul>
+                        <a href="javascript:;" id="next-img" class="focus-handle" style=""></a>
+                        <a href="javascript:;" id="prev-img" class="focus-handle" style=""></a>
+                    </div>
+                    <div id="a1111 col-md-12" class="" style="position: relative;">
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper m_t35">
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                                <div class="swiper-slide" style="background-image:url('./assets/imgs/banner3.jpg')">
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white" style="right: 50px;"></div>
+                            <div class="swiper-button-prev swiper-button-white" style="left: 50px;"></div>
+                        </div>
+                        <div class="swiper-container gallery-thumbs" style="
+                            height: 120px;position: absolute;bottom: -1%;z-index: 99;">
+                            <!-- <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                                <div class="swiper-slide swiper-slides"
+                                    style="background-image:url('./assets/imgs/banner.jpg')">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- 地图 -->
+                    <div class="row map_two_box container m_t70">
+                        <div class="col-md-5 map_content" style="background: red;" id="map">
+                            1
+                        </div>
+                        <div class="col-md-5 map_two_box_text" style="padding: 0px 20px;color: #BFBFBF;width: 48%">
+                            <h3 style="margin:30px 0 10px 0;">沙湾网点</h3>
+                            <select name="" id="" style="width: 62%;font-size: 16px;
+                            height: 10%;">
+                                <option value="0" data-lid="1">成都金牛区沙湾网点</option>
+                                <option value="1" data-lid="2">成都动物园</option>
+                                <option value="2" data-lid="3">环球中心</option>
+                            </select>
+                            <p class="map_wenzi">
+                                <span class="map_wenzi1"></span>
+                                <span>028-85536070</span>
+                                <span class="map_wenzi2"></span><span class="map_dizhi">成都金牛区沙湾网点一环路西三段</span>
+                            </p>
+                            <div class="row m_t20" style="margin-left: 2px;">
+                                <div class="col-md-5" style="background: url('./assets/imgs/map_icon.png')no-repeat">
+
+                                </div>
+                                <div class="col-md-5"
+                                    style="background: url('./assets/imgs/map_icon (2).png')no-repeat">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 线 -->
+    <div id="line" class="m_t50">
+
+    </div>
+    <!-- 底部 -->
+    <div id="footer" class="m_b20">
+        <div class="container">
+            <ul class="footer_conrent_title">
+                <li>走进德亲</li>
+                <li>德亲产品</li>
+                <li>信息中心</li>
+                <li>德亲英雄</li>
+                <li>加入德亲</li>
+            </ul>
+            <ul class="footer_conrent">
+                <li>
+                    <p style="margin-top:14px;">公司简介</p>
+                    <p>创始人致辞</p>
+                    <p>企业文化</p>
+                    <p>合作伙伴</p>
+                    <p>创始团队</p>
+                </li>
+                <li>
+                    <p style="margin-top:14px;">德亲生物</p>
+                    <p>德亲生物</p>
+                    <p>德亲生态农业</p>
+                    <p>德亲养生庄园</p>
+                </li>
+                <li>
+                    <p style="margin-top:14px;">媒体报道</p>
+                    <p>视频新闻</p>
+                    <p>企业新闻</p>
+                </li>
+                <li>
+                    <p style="margin-top:14px;">团队风采</p>
+                </li>
+                <li>
+                    <p style="margin-top:14px;">人才招聘</p>
+                    <p>联系我们</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_bottom container">
+        <div class="footer_bottom_one ">
+            <div style="display: flex;">
+                <select name="" id=""
+                    style="border-radius: 26px;width: 35%;;height: 27px;color: #BFBFBF;padding-left: 10px;">
+                    <option value="">德亲国旅</option>
+                    <option value="">22</option>
+                    <option value="">333</option>
+                </select>
+                <div style="margin-left: 13.7%;">
+                    <span style="padding-right: 20px;border-right:1px #ccc solid;color: #BFBFBF;">关于我们</span>
+                    <span style="padding-right: 20px;color: #BFBFBF;">联系我们</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 15px;">Copyright©2016-2019成都德亲生物技术有限公司 蜀ICP备0000000000号</div>
+        </div>
+        <div class="footer_bottom_two ">
+            <div
+                style="background:url('./assets/imgs/index_webo.png')no-repeat; background-size: 104%;height: 52%;width: 40%;">
+            </div>
+            <div
+                style="background:url('./assets/imgs/index_wechat.png')no-repeat; background-size: 104%;height: 52%;width: 40%;">
+            </div>
+            <div
+                style="background:url('./assets/imgs/xinfeng.png')no-repeat; background-size: 91%;background-position: 1px 4px;height: 52%;width: 40%;">
+            </div>
+        </div>
+        <div class="footer_bottom_three" style="margin-left:10%">
+            <p>成都市金牛区乡农市街59号A座</p>
+            <p style="margin-top: 16px;">
+                <span>电话：028-83416828</span>
+                <span>网址：www.deqn.com.cn</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="./lib/swiper/swiper.min.js"></script>
+    <script src="./lib/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+    <script type="text/javascript"
+        src="http://api.map.baidu.com/api?v=2.0&ak=070sA7LBN98do0zSMZ0Fe61MOANKZZxl"></script>
+    <script type="text/javascript"
+        src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <!-- bootstrap -->
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+  $("#head ul li").mousemove(function () {
+    // $("#head").find('p').css({"color": "#737373" })
+    $(".home_x").css({ "visibility": "hidden" })
+    // $(this).find('p').css({"color": "#F04D22" })
+    // $(this)
+    // $(this).find("p").css({"color":"#E8744A"})
+    $(this).find("a").addClass("selected").find(".home_x").css({ "visibility": "visible" })
+    console.log(1111);
+  }).mouseout(function () {
+    $(this).find("a").removeClass("selected");
+  })
+        /* 选项卡 */
+        $(".introduce_title li").click(function () { //获取当前选项的头部
+            $(".introduce_titles").removeClass('visibility')
+            $(".introduce_title_active").removeClass('active')
+            $(".introduce_title li").css({ "color": "#000", "cursor": "pointer" })
+
+
+            $(this).css({ "color": "#F26038", "cursor": "pointer" })
+            $(this).children(".introduce_titles").addClass('visibility')
+            $(this).find(".introduce_title_active").addClass('active')
+
+            //获取当前对象的索引
+            let index = $(this).index();
+            //设置当前对象的激活样式
+            //显示对应的内容
+            $(".introduce_content_list").hide().eq(index).show();
+        });
+                        // $(".introduce_title li").mouseover(function () {
+                        //     console.log(11);
+
+                        //     $(this).css({ "color": "#F26038", "cursor": "pointer" })
+                        //     $(this).children(".introduce_titles").css({ "visibility": "visible" })
+
+                        // }).mouseout(function () {
+                        //     $(this).css({ "color": "#000", "cursor": "pointer" })
+                        //     $(this).children(".introduce_titles").css({ "visibility": "hidden" })
+
+                        // })
+    </script>
+    <script>
+        /* 地图 */
+        // 百度地图API功能
+        var map = new BMap.Map('map');
+        var poi = new BMap.Point(104.047892, 30.638013);
+        var pt = new BMap.Point(104.047892, 30.638013);
+        map.centerAndZoom(poi, 16);
+
+        var icon = new BMap.Icon("", new BMap.Size(20, 26), {
+            'anchor': new BMap.Size(20, 26)
+        });
+        // 创建地址解析器实例
+        map.enableScrollWheelZoom(true);  //启用滚轮放大缩小，默认禁用
+
+        //创建marker对象
+        var marker = new BMap.Marker(pt, {
+            icon: icon
+        });
+
+        //marker.enableDragging(); //marker可拖拽
+        marker.addEventListener("click", function (e) {
+            searchInfoWindow.open(marker);
+        })
+
+        // 创建地址解析器实例
+        var myGeo = new BMap.Geocoder();
+        // 将地址解析结果显示在地图上，并调整地图视野
+        myGeo.getPoint($(".map_dizhi").text(), function (poi) {//回调函数
+            if (poi) {
+                map.centerAndZoom(poi, 16);
+                map.addOverlay(new BMap.Marker(poi));
+                //Overlay：覆盖物的抽象基类，所有的覆盖物均继承此类的方法。
+                map.addOverlay(marker);
+            }
+        }, "成都市");
+        $("select option").mousemove(function () {
+            console.log(1);
+
+            var id = $(this).data("lid");
+            $(".map_two_box_text").each(function (i) {
+                if (++i == id) {
+                    // 将地址解析结果显示在地图上，并调整地图视野
+                    myGeo.getPoint($(this).find(".map_dizhi").text(), function (poi) {//回调函数
+                        if (poi) {
+                            map.centerAndZoom(poi, 16);
+                            map.addOverlay(new BMap.Marker(poi));
+                            //Overlay：覆盖物的抽象基类，所有的覆盖物均继承此类的方法。
+                            map.addOverlay(marker);
+                        }
+                    }, "成都市");
+                }
+            });
+        });
+
+        changeMapStyle('white')
+        // sel.value = 'white';
+        function changeMapStyle(style) {
+            map.setMapStyle({
+                style: style
+            });
+            //$('#desc').html(mapstyles[style].desc);
+        }
+
+
+    </script>
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            var focusBanner = function () {
+                var $focusBanner = $("#focus-banner"),
+                    $bannerList = $("#focus-banner-list li"),
+                    $focusHandle = $(".focus-handle"),
+                    $bannerImg = $(".focus-banner-img"),
+                    $nextBnt = $("#next-img"),
+                    $prevBnt = $("#prev-img"),
+                    $focusBubble = $("#focus-bubble"),
+                    bannerLength = $bannerList.length,
+                    _index = 0,
+                    _timer = "";
+
+                var _height = $(".focus-banner-img").find("img").height();
+                $focusBanner.height(_height);
+                $bannerImg.height(_height);
+
+                for (var i = 0; i < bannerLength; i++) {
+                    $bannerList.eq(i).css("zIndex", bannerLength - i);
+                    $focusBubble.append('<li><a href="javascript:;">' + i + '</a></li>');
+                }
+                $focusBubble.find("li").eq(0).addClass("current");
+                var bubbleLength = $focusBubble.find("li").length;
+                $focusBubble.css({
+                    "width": bubbleLength * 22,
+                    "marginLeft": -bubbleLength * 11
+                });//初始化
+
+                $focusBubble.on("click", "li", function () {
+                    $(this).addClass("current").siblings().removeClass("current");
+                    _index = $(this).index();
+                    changeImg(_index);
+                });//点击轮换
+
+                $prevBnt.on("click", function () {
+                    _index++
+                    if (_index > bannerLength - 1) {
+                        _index = 0;
+                    }
+                    changeImg(_index);
+                });//下一张
+
+                $nextBnt.on("click", function () {
+                    _index--
+                    if (_index < 0) {
+                        _index = bannerLength - 1;
+                    }
+                    changeImg(_index);
+                });//上一张
+
+                function changeImg(_index) {
+                    $bannerList.eq(_index).fadeIn(250);
+                    $bannerList.eq(_index).siblings().fadeOut(200);
+                    $focusBubble.find("li").removeClass("current");
+                    $focusBubble.find("li").eq(_index).addClass("current");
+                    clearInterval(_timer);
+                    _timer = setInterval(function () { $nextBnt.click() }, 5000)
+                }//切换主函数
+                _timer = setInterval(function () { $nextBnt.click() }, 5000);
+
+
+                function isIE() { //ie?
+                    if (!!window.ActiveXObject || "ActiveXObject" in window)
+                        return true;
+                    else
+                        return false;
+                }
+
+                if (!isIE()) {
+                    $(window).resize(function () {
+                        window.location.reload();
+                    });
+                } else {
+                    if (!+'\v1' && !'1'[0]) {
+                        alert("老铁什么年代啦还在搞ie8以下版本啊！")
+                    } else {
+                        $(window).resize(function () {
+                            window.location.reload();
+                        });
+                    };
+                }
+
+            }();
+        })
+    </script>
+</body>
+
+</html>

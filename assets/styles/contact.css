@@ -1,0 +1,95 @@
+#contact .contact_text{
+    text-align: center;
+    border: 1px solid #DF4C18;
+    height: 1000px;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 0 30px;
+}
+#contact .container>h4{
+    font-size: 24px;
+    color: #DF4C18;
+    font-weight: bold;
+}
+.contact_text .col-md-6{
+    text-align: left;
+    width: 48%;
+}
+.col-md-6 li{
+    height: 50%;
+}
+.col-md-6 li h5{
+    color: #EA7A26;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0px 10px 0;
+}
+.col-md-6 p{
+    line-height: 172%;
+}
+
+.contact_map{
+    text-align: center;
+}
+
+.qrcode{
+    background: url(../imgs/QR\ code.jpg)no-repeat;
+    background-size:100%;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+.icon_map , .icon_map2{
+    position: absolute;
+    left: 10px;
+    top: 33px;
+    background: url(../imgs/user-address-2.png)no-repeat;
+    width: 67px;
+    height: 50px;
+}
+.contact_map_card{
+    margin-top: 20px;
+}
+.contact_map_card .contact_map_card_one{
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 84%;
+    padding: 40px 0px 0px 63px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    text-align: left;
+}
+.contact_map_card h5{
+    font-size:22px;
+    color: #DF4C18;
+    margin-bottom: 25px;
+   
+}
+.contact_map_card p{
+    color: #7A7A7A;
+    line-height: 27px;
+    font-size: 16px;
+}
+.contact_map_card p span{
+    color: rgb(109, 109, 109);
+    margin-right: 10px;
+}
+.contact_map_ditu{
+    border: #EF6C3E 2px solid;
+}
+
+.contact_map_card_one_box2 ,.contact_map_card_one_box{
+    /* border-radius: 10px; */
+    height: 20rem;
+}
+.selection{
+    /* background: #EF6C3E;
+    color: #FFFFFF; */
+}
+
+
+
+
+.map_list div{
+    display:none;
+}
